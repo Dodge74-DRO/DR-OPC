@@ -1,0 +1,513 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+body {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.Text-filtres-bar {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Text-Bold-16 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.Text-Bold-17 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.Text-Bold-18 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.subtitle-footer {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.text-footer {
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+Header {
+    width: 100%;
+    /*background-color: lightgray;*/
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.logo-booki {
+    height: 19px;
+    width: 61.09px;
+    /* background-color:rgb(98, 24, 216);*/
+    padding: 30px 50px 30px 50px;
+}
+
+header nav {
+    height: 35px;
+    width: 244px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-head-nav {
+    text-decoration: none;
+    color: black;
+    border-top: solid;
+    border-color: white;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.button-head-nav:hover {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.trouver-hebergement {
+    padding-bottom: 35px;
+}
+
+.search-text {
+    padding-bottom: 35px;
+}
+
+.search-bar {
+    width: 377px;
+    height: 49px;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+}
+
+.logo-position {
+    width: 49px;
+    height: 47px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid;
+    border-bottom: solid;
+    border-top-color: var(--main-bg-color);
+    border-bottom-color: var(--main-bg-color);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.input-submit {
+    height: 47px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid;
+    border-bottom: solid;
+    border-top-color: var(--main-bg-color);
+    border-bottom-color: var(--main-bg-color);
+    border-radius:0px 15px 15px 0px;
+}
+
+
+input[type='text'] {
+    width: 196px;
+    height: 41px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left:14px;
+}
+
+input[type='text']:focus {
+    outline:none;
+}
+
+input[type='submit']:active {
+    border-color: red;
+}
+
+
+
+/* CHANGEMENT APPARENCE BARRE LOCALISATION = rechercher*/
+@media (min-width: 767.98px) {
+    .input-avec-image {
+        background-image: url('../images/logo/logo-rechercher.svg');
+        background-size: 99px 15px; /* set the size of your image */
+        background-position: center; /* set the position of your image */
+        background-repeat: no-repeat;
+        color: white;
+        width: 132px;
+        height: 49px;
+        background-color: var(--main-color);
+        display: flex;
+        border: solid;
+        border-color: var(--main-color);
+        border-radius: 0px 15px 15px 0px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+}
+
+/* CHANGEMENT APPARENCE BARRE LOCALISATION  = logo loupe rechercher*/
+@media (max-width: 767.98px) {
+    input[type='text'] {
+        width: 264px;
+    }
+
+    .input-avec-image {
+        background-image: url('../images/logo/logo-loupe.svg');
+        background-size: 17px 17px; /* set the size of your image */
+        background-position: center; /* set the position of your image */
+        background-repeat: no-repeat;
+        color: white;
+        height: 49px;
+        width: 49px;
+        color: white;
+        background-color: var(--main-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid;
+        border-color: var(--main-color);
+        border-radius: 15px 15px 15px 15px;
+    }
+}
+
+
+.filtres-bar {
+    width: 56.56%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 15px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.filtres-bar-four-buttons {
+    display: flex;
+    flex-direction: row;
+    /*    justify-content: space-around;*/
+    align-items: left;
+    gap: 15px;
+}
+
+.filtres-bar-two-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.filtres-bar-buttons {
+    height: 50px;
+    border: solid;
+    border-color: var(--main-bg-color);
+    border-radius: 25px 25px 25px 25px;
+    display: flex;
+    flex-direction: row;
+    /*justify-content:space-around;*/
+    align-items: center;
+    padding: 0px 19px 0px 20px;
+    gap: 11px;
+}
+
+.filtres-bar-buttons:hover {
+    background-color: var(--filter-bg-color)
+}
+
+.filtres-infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+    padding-bottom: 35px;
+}
+
+.logo-infos {
+    height: 24px;
+    width: 24px;
+    border: solid;
+    border-color: var(--main-bg-color);
+    border-radius: 24px 24px 24px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+/* body {
+    display: flex;
+    justify-content: center;
+} */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.card-title {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.card-subtitle {
+    color: black;
+    text-decoration: none;
+}
+
+/****** Hebergements ***********/
+.hebergements {
+    background-color: var(--main-bg-color);
+    width: 65%;
+}
+
+/*.hebergements-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}*/
+
+.hebergements-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hebergements-cards a {
+    width: 28.74%;
+    justify-content: stretch;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+.afficher-plus {
+    margin-top: 30px;
+}
+
+/****** Populaires ***********/
+.populaires {
+    background-color: var(--main-bg-color);
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 30px;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+/****** Activités ***********/
+.trouver-activites {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trouver-activites section {
+    /*background-color: yellowgreen;*/
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.activites {
+    margin-top: 35px;
+    width: 100%;
+}
+
+.activites-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activites-cards a {
+    width: 23.24%;
+    justify-content: stretch;
+}
+
+.activites-cards .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.activites-cards img {
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites-cards .card-txt {
+    width: 100%;
+    height: 59px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.bas-de-page {
+    margin-top: 35px;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-mentions {
+    margin-left: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
