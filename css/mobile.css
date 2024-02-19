@@ -38,6 +38,10 @@
         padding: 0 0px;
     }
 
+    .search-text {
+        width: 335px;
+    }
+
     .search-bar {
         width: 335px;
     }
@@ -55,6 +59,13 @@
         width: 100%;
     }
 
+    .titre-filtres-bar {
+        line-height: 21px;
+        font-size: 18px;
+        margin-top:0px;
+        margin-bottom:3px;
+    }
+
     .filtres-bar-four-buttons {
         width:100%;
         flex-direction: column;
@@ -63,12 +74,12 @@
     .filtres-bar-two-buttons {
         width:100%;
         justify-content: left;
+        gap: 10px;
     }
 
     .filtres-bar-buttons {
         width: 48%;
     }
-
 
     /****** Hebergements ***********/
     .hebergements-and-populaires {
@@ -145,35 +156,18 @@
         height: 141px;
     }
 
-    .subtitle-footer{
-        line-height: 18px;
-        font-size: 18px;
-        font-weight: bold;
-        margin-top:0px;
-        margin-left: 0px;
-        margin-bottom:3px;
-    }
-    
-    .text-footer{
-        line-height: 16px;
-        font-size: 16px;
-        margin-top:15px;
-        margin-left: 0px;
-        margin-bottom:3px;
-    }
-       
     .bas-de-page {
-        width: 86%;
+        margin-top: 0px;
         background-color: var(--main-bg-color);
         flex-direction: column;
         justify-content: space-between;
-        padding:20px 0px 35px 0px;
+        padding:30px 0px 20px 0px;
         gap:15px;
     }
 
     .footer-mentions {
-        width:81.50%;
-        margin-top:35px;
+        width:100%;
+        margin-top:0px;
     }
 
 }

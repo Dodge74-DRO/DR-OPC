@@ -101,11 +101,11 @@ header nav {
 }
 
 .trouver-hebergement {
-    padding-bottom: 35px;
+    padding-bottom: 35px;*
 }
 
 .search-text {
-    padding-bottom: 35px;
+    margin-bottom: 35px;
 }
 
 .search-bar {
@@ -210,9 +210,8 @@ input[type='submit']:active {
     }
 }
 
-
 .filtres-bar {
-    width: 56.56%;
+    width: 758px;
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -238,7 +237,7 @@ input[type='submit']:active {
 }
 
 .filtres-bar-buttons {
-    height: 50px;
+    height: 44px;
     border: solid;
     border-color: var(--main-bg-color);
     border-radius: 25px 25px 25px 25px;
@@ -260,7 +259,7 @@ input[type='submit']:active {
     align-items: center;
     justify-content: left;
     gap: 15px;
-    padding-bottom: 35px;
+    /*padding-bottom: 35px;*/
 }
 
 .logo-infos {
@@ -496,6 +495,23 @@ a {
     justify-content: center;
 }
 
+.subtitle-footer{
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top:0px;
+    margin-left: 0px;
+    margin-bottom:3px;
+}
+
+.text-footer{
+    line-height: 16px;
+    font-size: 16px;
+    margin-top:15px;
+    margin-left: 0px;
+    margin-bottom:3px;
+}
+
 .bas-de-page {
     margin-top: 35px;
     width: 100%;
@@ -503,6 +519,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding:20px 0px 20px 0px;
 }
 
 .footer-mentions {
